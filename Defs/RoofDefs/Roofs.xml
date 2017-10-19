@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Roofs>
+	<RoofDef>
+		<defName>ShipHullRoof</defName>
+		<label>ship hull roof</label>
+		<description>This is a thick ship hull roof that will prevent drop pods from entering. Can only be built above ship parts.</description>
+		<isThickRoof>true</isThickRoof>
+		<filthLeaving>BuildingRubble</filthLeaving>
+		<soundPunchThrough>PunchThroughRoofMetal</soundPunchThrough>
+	</RoofDef>
+</Roofs>

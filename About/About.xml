@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Build and Save Ships</name>
+	<author>Vas</author>
+	<targetVersion>0.17.0</targetVersion>
+	<description>Basically a mod that adds the ability to build better more logical ships with different components, and the ability to save them and land them in future scenarios.</description>
+</ModMetaData>

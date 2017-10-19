@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+	<ThingDef ParentName="BuildingBase">
+		<defName>Ship_Engine</defName>
+		<label>ship engine</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/ShipEngine</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<researchPrerequisites>
+			<li>ShipEngine</li>
+		</researchPrerequisites>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>40000</WorkToBuild>
+			<MaxHitPoints>3600</MaxHitPoints>
+			<Flammability>0.75</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>An engine capable of launching a ship into orbit and on interstellar trajectories. When idle, this engine can generate a little bit of power through thermoelectric generation.</description>
+		<size>(3,3)</size>
+		<designationCategory>Ship</designationCategory>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-250</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_ShipPart"/>
+			<li Class="CompProperties_NoRoofing"/>
+		</comps>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>200</heatPerSecond>
+				<heatPushMaxTemperature>2000</heatPushMaxTemperature>
+			</li>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>PlaceWorker_HeadOnShipBeam</li>
+		</placeWorkers>
+		<building>
+			<shipPart>true</shipPart>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<Steel>200</Steel>
+			<Plasteel>300</Plasteel>
+			<Uranium>100</Uranium>
+			<Component>25</Component>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<designationHotkey>Misc5</designationHotkey>
+	</ThingDef>
+</GameData>

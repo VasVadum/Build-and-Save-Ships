@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+	<ThingDef ParentName="BuildingBase">
+		<defName>Ship_Beam</defName>
+		<label>ship structural beam</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/ShipBeam</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,7)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>8000</WorkToBuild>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>A structural beam around which a ship can be constructed.</description>
+		<size>(1,5)</size>
+		<designationCategory>Ship</designationCategory>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_ShipPart"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<building>
+			<shipPart>true</shipPart>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<Steel>200</Steel>
+			<Plasteel>150</Plasteel>
+			<Component>10</Component>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<researchPrerequisites>
+			<li>ShipBasics</li>
+		</researchPrerequisites>
+		<designationHotkey>Misc1</designationHotkey>
+		<holdsRoof>true</holdsRoof>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ShipAutodoor</defName>
+		<label>ship autodoor</label>
+		<thingClass>Building_Door</thingClass>
+		<blueprintClass>Blueprint_Door</blueprintClass>
+		<category>Building</category>
+		<description>Divides rooms in a ship. Powered operation allows people to move through the door without slowing down.</description>
+		<statBases>
+			<WorkToBuild>1800</WorkToBuild>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Ship/Autodoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<uiIconPath>Things/Building/Ship/Autodoor_MenuIcon</uiIconPath>
+		<costList>
+			<Steel>10</Steel>
+			<Plasteel>15</Plasteel>
+			<Component>2</Component>
+		</costList>
+		<costStuffCount>50</costStuffCount>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Door/Door_Blueprint</texPath>
+		</blueprintGraphicData>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>true</useHitPoints>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Ship</designationCategory>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<drawerType>RealtimeOnly</drawerType>
+		<building>
+			<isInert>true</isInert>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<soundDoorOpenPowered>DoorOpenPowered</soundDoorOpenPowered>
+			<soundDoorClosePowered>DoorClosePowered</soundDoorClosePowered>
+			<soundDoorOpenManual>DoorOpenManual</soundDoorOpenManual>
+			<soundDoorCloseManual>DoorCloseManual</soundDoorCloseManual>
+			<shipPart>true</shipPart>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_DoorLearnOpeningSpeed</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_ShipPart"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationHotKey>Misc2</designationHotKey>
+		<researchPrerequisites>
+			<li>ShipBasics</li>
+			<li>Autodoors</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase" Name="Wall">
+		<defName>ModularShipBeam</defName>
+		<label>ship hull wall</label>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<description>A ship's hull, used to seperate rooms and keep the vacuum of space outside.</description>
+		<size>(1,1)</size>
+		<graphicData>
+			<texPath>Things/Building/Ship/Hull_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+		</graphicData>
+		<blueprintGraphicData>
+			<texPath>Things/Building/Ship/Hull_Atlas</texPath>
+		</blueprintGraphicData>
+		<uiIconPath>Things/Building/Ship/Hull_Atlas</uiIconPath>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>1600</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<Steel>20</Steel>
+			<Plasteel>25</Plasteel>
+			<Component>2</Component>
+		</costList>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<holdsRoof>true</holdsRoof>
+		<designationCategory>Ship</designationCategory>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<building>
+			<shipPart>true</shipPart>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>1.5</multiplier>
+			</li>
+		</damageMultipliers>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_ShipPart"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>ShipBasics</li>
+		</researchPrerequisites>
+	</ThingDef>
+</GameData>
