@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Roofs>
+
 	<RoofDef>
 		<defName>ShipHullRoof</defName>
 		<label>ship hull roof</label>
@@ -8,4 +9,5 @@
 		<filthLeaving>BuildingRubble</filthLeaving>
 		<soundPunchThrough>PunchThroughRoofMetal</soundPunchThrough>
 	</RoofDef>
+	
 </Roofs>

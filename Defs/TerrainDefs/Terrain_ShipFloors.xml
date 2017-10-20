@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+	<TerrainDef Name="FloorBase" Abstract="True">
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>SmoothHard</li>
+		</affordances>
+		<statBases>
+			<WorkToBuild>900</WorkToBuild>
+		</statBases>
+		<designationCategory>Ship</designationCategory>
+		<Fertility>0</Fertility>
+		<constructEffect>ConstructMetal</constructEffect>
+		<AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<altitudeLayer>Floor</altitudeLayer>
+		<passability>Standable</passability>
+		<placingDraggableDimensions>2</placingDraggableDimensions>
+	</TerrainDef>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>ShipHullTile</defName>
+		<label>hull plating</label>
+		<Description>The ship hull for the bottom of your ship, which you construct things on top of to take with you to space.</Description>
+		<texturePath>Things/Building/Ship/HullFloor</texturePath>
+		<color>(0.45, 0.45, 0.45)</color>
+		<EdgeType>Hard</EdgeType>
+		<RenderPrecedence>70</RenderPrecedence>
+		<researchPrerequisites>
+			<li>ShipBasics</li>
+		</researchPrerequisites>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>750</WorkToBuild>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<CostList>
+			<Steel>3</Steel>
+			<Plasteel>4</Plasteel>
+		</CostList>
+	</TerrainDef>
+	
+</TerrainDefs>

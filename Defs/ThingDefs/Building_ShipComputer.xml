@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Ship_ComputerCore</defName>
+		<label>ship computer core</label>
+		<thingClass>Building_ShipComputerCore</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/ShipComputerCore</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<researchPrerequisites>
+			<li>ShipComputerCore</li>
+		</researchPrerequisites>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>16000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>An artificially intelligent supercomputer capable of guiding a ship through most situations to safety. Chances of survival in hostile conditions are 78%, which is a better chance than when humans are in control, in most cases!</description>
+		<size>(1,1)</size>
+		<designationCategory>Ship</designationCategory>
+		<comps>
+			<li Class="CompProperties_ShipPart"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>25</heatPerSecond>
+				<heatPushMaxTemperature>100</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>BetterShip.PlaceWorker_InsideShip</li>
+		</placeWorkers>
+		<building>
+			<shipPart>true</shipPart>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<Steel>600</Steel>
+			<Component>16</Component>
+			<Gold>100</Gold>
+			<AIPersonaCore>1</AIPersonaCore>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<designationHotkey>Misc3</designationHotkey>
+	</ThingDef>
+	
+</GameData>

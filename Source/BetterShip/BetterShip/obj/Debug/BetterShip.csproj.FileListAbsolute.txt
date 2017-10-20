@@ -1,0 +1,12 @@
+F:\Steam\steamapps\common\RimWorld\Mods\Build-and-Save-Ships-Alpha\Source\BetterShip\BetterShip\bin\Debug\BetterShip.dll
+F:\Steam\steamapps\common\RimWorld\Mods\Build-and-Save-Ships-Alpha\Source\BetterShip\BetterShip\bin\Debug\BetterShip.pdb
+F:\Steam\steamapps\common\RimWorld\Mods\Build-and-Save-Ships-Alpha\Source\BetterShip\BetterShip\bin\Debug\Assembly-CSharp.dll
+F:\Steam\steamapps\common\RimWorld\Mods\Build-and-Save-Ships-Alpha\Source\BetterShip\BetterShip\bin\Debug\UnityEngine.dll
+F:\Steam\steamapps\common\RimWorld\Mods\Build-and-Save-Ships-Alpha\Source\BetterShip\BetterShip\bin\Debug\Assembly-CSharp-firstpass.dll
+F:\Steam\steamapps\common\RimWorld\Mods\Build-and-Save-Ships-Alpha\Source\BetterShip\BetterShip\bin\Debug\NAudio.dll
+F:\Steam\steamapps\common\RimWorld\Mods\Build-and-Save-Ships-Alpha\Source\BetterShip\BetterShip\bin\Debug\NVorbis.dll
+F:\Steam\steamapps\common\RimWorld\Mods\Build-and-Save-Ships-Alpha\Source\BetterShip\BetterShip\bin\Debug\UnityEngine.xml
+F:\Steam\steamapps\common\RimWorld\Mods\Build-and-Save-Ships-Alpha\Source\BetterShip\BetterShip\obj\Debug\BetterShip.csprojResolveAssemblyReference.cache
+F:\Steam\steamapps\common\RimWorld\Mods\Build-and-Save-Ships-Alpha\Source\BetterShip\BetterShip\obj\Debug\BetterShip.csproj.CoreCompileInputs.cache
+F:\Steam\steamapps\common\RimWorld\Mods\Build-and-Save-Ships-Alpha\Source\BetterShip\BetterShip\obj\Debug\BetterShip.dll
+F:\Steam\steamapps\common\RimWorld\Mods\Build-and-Save-Ships-Alpha\Source\BetterShip\BetterShip\obj\Debug\BetterShip.pdb

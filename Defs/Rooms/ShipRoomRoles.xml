@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RoomRoleDefs>
+
+	<RoomRoleDef>
+		<defName>ShipInterior</defName>
+		<label>ship interior</label>
+		<workerClass>BetterShip.RoomRoleWorker_ShipInterior</workerClass>
+	</RoomRoleDef>
+	
+</RoomRoleDefs>

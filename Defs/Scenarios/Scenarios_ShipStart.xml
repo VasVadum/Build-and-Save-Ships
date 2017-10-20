@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<ScenarioDef>
 		<defName>CrashedShip</defName>
 		<label>crashed ship</label>
@@ -12,10 +13,12 @@
 			</playerFaction>
 			<parts>
 			<!-- Pick Default Ship -->
+			<!-- Will make later
 				<li Class="ScenPart_LandShip">
 					<def>ScenPart_LandShip</def>
-					<ship>defaultcrashship</ship> <!-- Will make later -->
+					<ship>defaultcrashship</ship>
 				</li>
+			-->
 
 				<!-- Scatter some things anywhere -->
 				<li Class="ScenPart_ScatterThingsAnywhere">
@@ -39,9 +42,9 @@
 					<def>GameStartDialog</def>
 					<textKey>GameStartDialog</textKey>
 					<closeSound>GameStartSting</closeSound>
-				</li>
-				
+				</li>		
 			</parts>
 		</scenario>
 	</ScenarioDef>
+	
 </Defs>

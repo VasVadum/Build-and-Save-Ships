@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Ship_Reactor</defName>
+		<label>ship reactor</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/ShipReactor</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(7,7)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<researchPrerequisites>
+			<li>ShipReactor</li>
+		</researchPrerequisites>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>A moderately sized ship reactor that powers a ship and some extra for space travel.</description>
+		<size>(5,5)</size>
+		<designationCategory>Ship</designationCategory>
+		<building>
+			<shipPart>true</shipPart>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<Steel>450</Steel>
+			<Plasteel>550</Plasteel>
+			<Uranium>250</Uranium>
+			<Component>28</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-2000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_ShipPart"/>
+		</comps>
+		<placeWorkers>
+			<li>BetterShip.PlaceWorker_InsideShip</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>Ship_Reactor_Small</defName>
+		<label>small ship reactor</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/ShipReactor</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<researchPrerequisites>
+			<li>ShipReactor</li>
+		</researchPrerequisites>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>18000</WorkToBuild>
+			<MaxHitPoints>540</MaxHitPoints>
+			<Flammability>0.75</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>A small ship reactor, signifigantly cheaper than the larger version but only powers the ship components and provides enough power to turn on a small power indicator somewhere in the ship like a tiny LED light somewhere.</description>
+		<size>(3,3)</size>
+		<designationCategory>Ship</designationCategory>
+		<building>
+			<shipPart>true</shipPart>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<Steel>162</Steel>
+			<Plasteel>198</Plasteel>
+			<Uranium>90</Uranium>
+			<Component>10</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-3</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_ShipPart"/>
+		</comps>
+		<placeWorkers>
+			<li>BetterShip.PlaceWorker_InsideShip</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>Ship_Reactor_Heavy</defName>
+		<label>heavy ship reactor</label>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Ship/ShipReactor</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(7,7)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<researchPrerequisites>
+			<li>ShipReactor</li>
+		</researchPrerequisites>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Flammability>0.45</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>A specialized ship reactor that powers a ship as well as many of the components on the ship, provides an abundance of power generation to even run a colony on for a while, so long as you can keep it alive.  This reactor produces a fair amount of heat.</description>
+		<size>(5,5)</size>
+		<designationCategory>Ship</designationCategory>
+		<building>
+			<shipPart>true</shipPart>
+			<ignoreNeedsPower>true</ignoreNeedsPower>
+		</building>
+		<costList>
+			<Steel>2250</Steel>
+			<Plasteel>2750</Plasteel>
+			<Uranium>1250</Uranium>
+			<Component>140</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-10000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_ShipPart"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(252,187,113,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>25</heatPerSecond>
+				<heatPushMaxTemperature>100</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>BetterShip.PlaceWorker_InsideShip</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+	</ThingDef>
+	
+</GameData>
